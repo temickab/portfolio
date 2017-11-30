@@ -1,3 +1,13 @@
 body{
    
+   
+}
+
+article{
+    display: flex;
+}
+
+nav ul{
+    list-style-type: none;
+    letter-spacing: 10px;   
 }
