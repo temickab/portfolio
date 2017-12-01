@@ -1,11 +1,14 @@
 body{
     text-align: center;
-    background-color: antiquewhite;
+    background-image: url("coolbackground.jpg");
 }
+
+
 
 #wrapper{
     width: 1000px;
     margin: 0 auto;
+    color: floralwhite;
 }
 
 header{
@@ -19,7 +22,7 @@ h1{
     margin: auto;
     padding-top: 30px;
     padding-bottom: 30px;
-    color: floralwhite;
+    color: bisque;
     font-family: 'Bungee', cursive;
 }
  /*hello*/
@@ -28,17 +31,21 @@ nav{
 	float: left;
 	/*margin: 0 0 3em 0;*/
 	padding: 0;
-    background-color: antiquewhite;
+    background-image: url("background.jpg");
 
     
 	 
 }
 
+nav a{
+    color: bisque;
+}
+
+
 nav li{
     float: left;
     list-style: none;
     padding-left: 170px;
-    color: floralwhite;
     font-family: 'Bungee', 'cursive';
     
     
@@ -80,7 +87,7 @@ footer{
   left: 0;
   padding: 1rem;
   color: floralwhite;
-  background-color: purple;
+  background-image: url("background.jpg");
   text-align: center;
 }
 
