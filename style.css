@@ -1,5 +1,10 @@
 body{
-    margin: auto;
+    text-align: center;
+}
+
+#wrapper{
+    width: 1000px;
+    margin: 0 auto;
 }
 
 header{
@@ -31,9 +36,10 @@ nav{
 nav li{
     float: left;
     list-style: none;
-    padding-left: 300px;
+    padding-left: 170px;
     color: floralwhite;
     font-family: 'Bungee', 'cursive';
+    
     
 }
 
@@ -42,6 +48,14 @@ nav li{
     height: 185px;
     width: 185px;
     float: center;
+    margin-left: 380px;
+    margin-top: 100px;
+}
+
+.first p{
+    font-family: 'Bungee', 'cursive';
+    font-size: 30px;
+    color: purple;
 }
 
  p{
@@ -52,7 +66,10 @@ nav li{
     background-color: orange;
     height: 160px;
     width: 160px;
-    float: right;      
+    float: right; 
+    margin: auto;
+    padding-right: 650px;
+    
 }
 
 footer{
