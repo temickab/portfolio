@@ -1,44 +1,240 @@
 <!DOCTYPE html>
 <html>
-
-<head>
+  <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>portfolio</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cinzel+Decorative">
-    <link rel="stylesheet" href="assets/css/styles.min.css">
-</head>
-
-<body style="background-repeat:no-repeat;background-position:center;background-color:#ffffff;">
-    <div class="small-nav" style="width:350px;height:103px;margin-left:1000px;">
-        <p style="padding-top:47px;color:rgb(201,208,215);font-family:'Cinzel Decorative', cursive;">Contact &nbsp; &nbsp; &nbsp;My Projects &nbsp; &nbsp; &nbsp; About Me</p>
-    </div>
-    <p style="font-family:'Cinzel Decorative', cursive;color:#f9b0e4;font-size:81px;margin-top:160px;">Temicka brown</p>
-    <p class="text-center text-white" id="project" style="padding-top:0px;font-family:'Cinzel Decorative', cursive;font-size:35px;">My Projects</p>
-    <div class="flex-container">
-        <div class="box1"><img src="assets/img/woofpost.png"></div>
-        <div class="box2"><img src="assets/img/trivia.png"></div>
-        <div class="box3"><img src="assets/img/video ideas.png"></div>
-    </div>
-    <section class="about" style="background-color:#b34cae;height:800px;padding-top:25px;padding-right:25px;padding-bottom:25px;padding-left:25px;">
-        <p class="aboutsection" style="font-family:'Cinzel Decorative', cursive;color:rgb(210,220,230);font-size:55px;">About ME</p>
-        <div class="formatting" style="width:900px;padding-left:567px;padding-right:-46px;"><img src="assets/img/temicka.png" style="margin-left:-237px;margin-top:5px;padding-top:3px;margin-bottom:-13px;">
-            <p class="about-me-para" style="color:rgb(224,229,234);padding-top:0px;margin-left:20px;margin-right:-78px;font-size:25px;margin-top:-192px;"><br>I am a multi-talented person who has worked in customer service as well as the Department of Corrections. I have done it all. Ever since highschool, I have wanted to be a web developer. I have spent the last five years trying to perfect
-                my craft only to learn that I will not know everything. I have spent countless hours learning web development with every second of it leaving me with the great feeling of knowing that when I'm done, I have built something spectacular!</p>
-            <div>
-                <footer style="margin-top:8px;margin-bottom:11px;padding-top:196px;padding-left:0pc;padding-right:39px;">
-                    <ul style="width:373px;margin-left:-145px;">
-                        <li><img src="assets/img/twitter.png" style="width:50px;height:50px;"></li>
-                        <li><img src="assets/img/linkedin.png" style="width:50px;height:50px;"></li>
-                        <li><img src="assets/img/github.png" style="width:50px;height:50px;"></li>
-                    </ul>
-                </footer>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Temicka's Portfolio</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="all,follow">
+    <!-- Bootstrap and Font Awesome css-->
+    <!-- we use cdn but you can also include local files located in css directory-->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/themify-icons.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <!-- Google fonts - Roboto Condensed for headings, Open Sans for copy-->
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto+Condensed:300,700%7COpen+Sans:300,400,700">
+    <!-- theme stylesheet-->
+    <link rel="stylesheet" href="css/style.default.css" id="theme-stylesheet">
+    <!-- Custom stylesheet - for your changes-->
+    <link rel="stylesheet" href="css/custom.css">
+    <!-- Favicon-->
+    <link rel="shortcut icon" href="favicon.png">
+    <!-- Tweaks for older IEs--><!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+  </head>
+  <body data-spy="scroll" data-target="#navigation" data-offset="120">
+    <!-- intro-->
+    <section id="intro" class="intro image-background">
+      <div class="overlay"></div>
+      <div class="content">
+        <div class="container clearfix">
+          <div class="row">
+            <div class="col-md-8 col-md-offset-2 col-sm-12">
+              <p class="roboto">Temicka Brown</p>
+              <h1>I am a<br /><span class="bold">Web Developer</span></h1>
+              <p class="roboto">Just know that I am always learning!</p>
             </div>
+          </div>
         </div>
+      </div><a href="#about" class="icon faa-float animated scroll-to"><i class="fa fa-angle-double-down"></i></a>
     </section>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
-</body>
-
+    <!-- navbar-->
+    <header class="header">
+      <div class="sticky-wrapper">
+        <div role="navigation" class="navbar navbar-default">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" data-toggle="collapse" data-target=".navbar-collapse" class="navbar-toggle"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a href="#intro" class="navbar-brand scroll-to"><img src="img/logo.png" alt=""></a>
+            </div>
+            <div id="navigation" class="collapse navbar-collapse">
+              <ul class="nav navbar-nav navbar-right">
+                <li class="active"><a href="#intro">Home</a></li>
+                <li><a href="#about">About </a></li>
+                <li><a href="#services">Projects</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#text">Text</a></li>
+                <li><a href="#team">Team</a></li>
+                <li><a href="#contact">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- /.navbar-->
+    <!-- about us-->
+    <section id="about">
+      <div class="container clearfix">
+        <div class="row margin-bottom">
+          <div class="col-md-6 margin-bottom"> 
+            <h2 class="heading">About Me</h2>
+            <p class="lead">I want to be good at what I do. Then I learned to never stop learning.</p>
+            <p>Well, first I'd like to say that I started programming around the age of 17. That was when I was in highschool and took an elective programming class. At the time I was not good and the teacher didn't expect me to even try...Well...until it was time to showcase our projects. At the time, we had only learned HTML and inline CSS. I believe her exact words were, "Wow Temicka!"</p>
+            <p>Well that was 12 years ago. Let's fast forward to today shall we? Ok, well... My niche for programming never went away, and I decided to learn front-end web development in 2014. Boy oh Boy, no one told me that Javascript was going to be such a challenge. Here is what I learned after I got my first front-end web development certificate from Skill Crush!</p>
+            <div class="row">
+              <div class="col-sm-6">
+                <ul>
+                  <li><b>Mobile First</b> Yup, started with those media queries!</li>
+                  <li><b>Flex Box</b> Wow it literally saved my life when it came to aligning divs and sections.</li>
+                  <li><b>BootStrap</b> Is it considered cheating if I use a bootstrap theme? I mean... come on, they save so much time!</li>
+                </ul>
+              </div>
+              <div class="col-sm-6">
+                <ul>
+                  <li><b>Git and GitHub</b> I can say that I have been utilizing that terminal now for almost four years!</li>
+                  <li><b>Vanilla Javascript</b>I strongly believe, if you have a great foundation with Javascript, frameworks just come like a breeze. <b>VueJS anyone?</b></li>
+                  <li><b>Never Stop Learning</b></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 margin-bottom">
+            <p><img src="img/temicka.jpg" alt="" class="img-responsive"></p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-6">
+            <h5></i>Experience</h5>
+            <ul>
+              <li>NodeJs</li>
+              <li>Express</li>
+              <li>MongoDb</li>
+              <li>Git/GitHub</li>
+              <li>Ruby</li>
+              <li>React</li>
+            </ul>
+          </div>
+          <div class="col-sm-6">
+            <h5><b>Foundations</b></h5>
+            <ul>
+              <li>JavaScript</li>
+              <li>ES6</li>
+              <li>HTML5</li>
+              <li>CSS3</li>
+            </ul>
+            
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-6">
+            <h5><i class="fa fa-life-ring"></i>Effects present letters inquiry no an removed or friends.</h5>
+            <p>Able an hope of body. Any nay shyness article matters own removal nothing his forming.</p>
+          </div>
+          <div class="col-sm-6">
+            <h5> <i class="fa fa-trophy"></i>Effects present letters inquiry no an removed or friends.</h5>
+            <p>Able an hope of body. Any nay shyness article matters own removal nothing his forming.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- services-->
+    <section id="services" class="section-gray">
+      <div class="container clearfix">
+        <div class="row services">
+          <div class="col-md-12">
+            <h2 class="heading">My Work</h2>
+            <div class="row">
+              <div class="col-sm-4">
+                <div class="box box-services">
+                  <div class="icon"><i class="ti-desktop"></i></div>
+                  <h4 class="heading">Web Development</h4>
+                  <p>I have built projects from scratch and also used templates.</p>
+                </div>
+              </div>
+              <div class="col-sm-4">
+                <div class="box box-services">
+                  <div class="icon"><i class="ti-printer"></i></div>
+                  <h4 class="heading">Frameworks</h4>
+                  <p>I've used frameworks such as BootStrap and Materialize.</p>
+                </div>
+              </div>
+              <div class="col-sm-4">
+                <div class="box box-services">
+                  <div class="icon"><i class="ti-search"></i></div>
+                  <h4 class="heading">Back End Development</h4>
+                  <p>I have a few simple projects with CRUD in Ruby on Rails and Full Stack Javascript.</p>
+                </div>
+              </div>
+            </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- portfolio-->
+    <section id="portfolio" class="no-padding-bottom">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h2 class="heading">Portfolio</h2>
+            <p class="text-center">You can make also a portfolio or image gallery.</p>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid">
+        <div class="row no-space">
+          <div class="col-sm-4 col-md-3">
+            <div class="box"><a href="#" title=""><img src="img/trivia.png" alt="" class="img-responsive"></a></div>
+          </div>
+          <div class="col-sm-4 col-md-3">
+            <div class="box"><a href="#" title=""><img src="img/videoideas.png" alt="" class="img-responsive"></a></div>
+          </div>
+          <div class="col-sm-4 col-md-3">
+            <div class="box"><a href="#" title=""><img src="img/woofingtonpost.png" alt="" class="img-responsive"></a></div>
+          </div>
+          <div class="col-sm-4 col-md-3">
+            <div class="box"><a href="#" title=""><img src="img/portfolio-5.jpg" alt="" class="img-responsive"></a></div>
+          </div>
+          <div class="col-sm-4 col-md-3">
+            <div class="box"><a href="#" title=""><img src="img/portfolio-4.jpg" alt="" class="img-responsive"></a></div>
+          </div>
+          <div class="col-sm-4 col-md-3">
+            <div class="box"><a href="#" title=""><img src="img/portfolio-6.jpg" alt="" class="img-responsive"></a></div>
+          </div>
+          <div class="col-sm-4 col-md-3">
+            <div class="box"><a href="#" title=""><img src="img/portfolio-2.jpg" alt="" class="img-responsive"></a></div>
+          </div>
+          <div class="col-sm-4 col-md-3">
+            <div class="box"><a href="#" title=""><img src="img/portfolio-8.jpg" alt="" class="img-responsive"></a></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  
+    <footer>
+      <div class="container">
+        <div class="row copyright">
+          <div class="col-md-6">
+            <p class="roboto">&copy;2017 Your name/company goes here</p>
+          </div>
+          <div class="col-md-6">
+            <p class="credit roboto"><a href="https://www.bootstrapious.com/tutorials">Bootstrapious</a></p>
+            <!-- Please do not remove the backlink to us unless you support the development at https://bootstrapious.com/donate. It is part of the license conditions. Thanks for understanding :) -->
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Javascript files-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    <script src="js/jquery.sticky.js"></script>
+    <script src="js/jquery.scrollTo.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu5nZKbeK-WHQ70oqOWo-_4VmwOwKP9YQ"></script>
+    <!-- to use it on your site, change API key for Google Maps -->
+    <script src="js/gmaps.js"></script>
+    <script src="js/jquery.cookie.js"></script>
+    <script src="js/front.js"></script>
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID.-->
+    <script>
+      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+      e.src='//www.google-analytics.com/analytics.js';
+      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+      ga('create','UA-XXXXX-X');ga('send','pageview');
+    </script>
+  </body>
 </html>
