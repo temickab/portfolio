@@ -1,2 +1,10 @@
 /* your styles go here */
 
+.img-background{
+    /* background-color: grey; */
+    background-image: url('../img/color.jpg')
+}
+
+/* #about{
+    background-image: url('')
+} */
