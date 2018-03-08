@@ -5,6 +5,31 @@
     background-image: url('../img/color.jpg')
 }
 
+#resume{
+      background-image: url('../img/chalk.jpg');
+      text-align: center;
+      color: white;
+      height: 500px;
+  
+}
+ #resume a{
+     color: white;
+ }
+
+ #para{
+     text-align: center;
+     color: white;
+ }
+
+ .social{
+     text-align: center;
+ }
+
+ .box{
+     height: 300px;
+     width: 300px;
+ }
+
 /* #about{
     background-image: url('')
 } */
