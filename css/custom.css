@@ -4,7 +4,11 @@
     /* background-color: grey; */
     background-image: url('../img/dominik-scythe.jpg');
     background-size: 100%;
+    background-repeat: no-repeat;
 }
+
+
+
  h1{
     font-family: 'Berkshire Swash', cursive;
 }
@@ -17,11 +21,13 @@
       background-image: url('../img/paradise.jpg');
       background-attachment: fixed;
       background-size: 100%;
+      background-repeat: no-repeat;
       text-align: center;
       color: white;
       height: 800px;
   
 }
+
 
  #para{
      text-align: center;
@@ -45,6 +51,45 @@
     -webkit-animation: text-shadow-pop-top 0.6s both;
     animation: text-shadow-pop-top 0.6s both;
 }
+
+.swing-in-top-fwd {
+	-webkit-animation: swing-in-top-fwd 0.5s cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
+	 animation: swing-in-top-fwd 0.5s cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
+}
+
+.slide-in-left {
+	-webkit-animation: slide-in-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	animation: slide-in-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+ @-webkit-keyframes slide-in-left {
+        0% {
+          -webkit-transform: translateX(-1000px);
+                  transform: translateX(-1000px);
+          opacity: 0;
+        }
+        100% {
+          -webkit-transform: translateX(0);
+                  transform: translateX(0);
+          opacity: 1;
+        }
+      }
+      @keyframes slide-in-left {
+        0% {
+          -webkit-transform: translateX(-1000px);
+                  transform: translateX(-1000px);
+          opacity: 0;
+        }
+        100% {
+          -webkit-transform: translateX(0);
+                  transform: translateX(0);
+          opacity: 1;
+        }
+      }
+      
+
+
+      
 
 .text-shadow-pop-top {
 	-webkit-animation: text-shadow-pop-top 0.6s both;
@@ -178,4 +223,40 @@ h1{
               animation-timing-function: ease-out;
     }
   }
+
+  @media only screen and (max-width: 700px) {
+        .img-background{
+                /* background-color: grey; */
+                background-image: url('../img/dominik-scythe.jpg');
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+
+            #resume{
+                background-image: url('../img/paradise.jpg');
+                background-attachment: fixed;
+                background-size: cover;
+                background-repeat: no-repeat;
+                text-align: center;
+                color: white;
+                height: 800px;
+            
+          }
+
+          .never{
+                  font-size: 40px;
+          }
+
+          .move{
+                   margin-left: 50px; 
+                  
+                
+
+          }
+
+       
+
+        
+        
+        }
   
