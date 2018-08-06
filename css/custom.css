@@ -112,6 +112,16 @@ h5{
         color: white;
 }
 
+a:hover{
+        color: pink;
+}
+
+.navbar-default .navbar-nav > li > a{
+        color: white;
+}
+
+
+
 .collapse{
         background-color: black;
 }
