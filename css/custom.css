@@ -131,6 +131,10 @@ a:hover{
         border: black;
 }
 
+.footer{
+        background: black;
+}
+
 
 .swing-in-top-fwd {
 	-webkit-animation: swing-in-top-fwd 0.5s cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
@@ -644,9 +648,8 @@ a:hover{
 
           }
 
-       
-
-        
         
         }
+
+
   
